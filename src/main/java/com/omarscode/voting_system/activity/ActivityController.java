@@ -27,7 +27,7 @@ public class ActivityController {
         return activityService.getActivities();
     }
 
-    @GetMapping("{id")
+    @GetMapping("{id}")
     public Activity geActivity(@PathVariable Long id){
         return activityService.getActivity(id);
     }
