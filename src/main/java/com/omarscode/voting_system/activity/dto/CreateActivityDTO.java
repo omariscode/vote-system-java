@@ -1,5 +1,11 @@
 package com.omarscode.voting_system.activity.dto;
 
-public class CreateActivityDTO {
-    
-}
+import java.time.LocalDate;
+
+public record CreateActivityDTO( 
+    String name,
+    String description,
+    boolean finished,
+    LocalDate startDate,
+    LocalDate endDate
+) {}

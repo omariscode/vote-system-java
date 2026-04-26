@@ -24,10 +24,18 @@ public class Activity {
 
     private boolean finished;
 
-    private LocalDate start_date;
-    private LocalDate end_date;
+    private LocalDate startDate;
+    private LocalDate endDate;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
+
+    public Activity(String name, String description, boolean finished, LocalDate startDate, LocalDate endDate) {
+    this.name = name;
+    this.description = description;
+    this.finished = finished;
+    this.startDate = startDate;
+    this.endDate = endDate;
+}
     
 }
