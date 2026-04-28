@@ -1,5 +1,7 @@
-package com.omarscode.voting_system.category.entity;
+package com.omarscode.voting_system.Subcategory;
 
+
+import com.omarscode.voting_system.category.entity.Category;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -26,6 +28,10 @@ public class Subcategory {
     public Subcategory(String name, Category category) {
         this.name = name;
         this.category = category;
+    }
+
+    public Long getId(){
+        return id;
     }
 
     public String getName(){

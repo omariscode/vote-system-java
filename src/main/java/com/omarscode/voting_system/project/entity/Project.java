@@ -1,9 +1,8 @@
 package com.omarscode.voting_system.project.entity;
 
 import com.omarscode.voting_system.category.entity.Category;
-
+import com.omarscode.voting_system.Subcategory.Subcategory;
 import com.omarscode.voting_system.activity.entity.Activity;
-import com.omarscode.voting_system.category.entity.Subcategory;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
