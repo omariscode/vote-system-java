@@ -30,12 +30,46 @@ public class Activity {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
+    public Activity() {
+    }
+
     public Activity(String name, String description, boolean finished, LocalDate startDate, LocalDate endDate) {
-    this.name = name;
-    this.description = description;
-    this.finished = finished;
-    this.startDate = startDate;
-    this.endDate = endDate;
-}
-    
+        this.name = name;
+        this.description = description;
+        this.finished = finished;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public boolean isFinished() {
+        return finished;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setFinished(boolean finished) {
+        this.finished = finished;
+    }
 }

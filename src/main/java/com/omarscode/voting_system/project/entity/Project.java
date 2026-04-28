@@ -1,6 +1,6 @@
 package com.omarscode.voting_system.project.entity;
 
-import java.util.Locale.Category;
+import com.omarscode.voting_system.category.entity.Category;
 
 import com.omarscode.voting_system.activity.entity.Activity;
 import com.omarscode.voting_system.category.entity.Subcategory;

@@ -2,10 +2,13 @@ package com.omarscode.voting_system.activity.dto;
 
 import java.time.LocalDate;
 
-public record CreateActivityDTO( 
-    String name,
-    String description,
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record CreateActivityDTO(
+    @NotBlank String name,
+    @NotBlank String description,
     boolean finished,
-    LocalDate startDate,
-    LocalDate endDate
+    @NotNull LocalDate startDate,
+    @NotNull LocalDate endDate
 ) {}
