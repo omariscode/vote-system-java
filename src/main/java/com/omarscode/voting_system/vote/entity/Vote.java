@@ -23,4 +23,7 @@ public class Vote {
 
     @ManyToOne
     private Voter vote;
+
+    public Vote() {
+    }
 }

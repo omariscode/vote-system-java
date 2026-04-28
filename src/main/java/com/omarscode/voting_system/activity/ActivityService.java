@@ -18,22 +18,14 @@ public class ActivityService {
 
     private final ActivityRepository activityRepository;
 
-    public List<Activity> getActivities(){
-        return activityRepository.findAll();
-    }
-
-    public List<ActivityResponseDTO> getActivitiesDTO(){
+    public List<ActivityResponseDTO> getActivities(){
         return activityRepository.findAll()
             .stream()
             .map(this::toResponse)
             .toList();
     }
 
-    public Activity getActivity(Long id){
-        return activityRepository.findById(id).orElseThrow(() -> new  ResponseStatusException(HttpStatus.NOT_FOUND, "Activity not found"));
-    }
-
-    public ActivityResponseDTO getActivityDTO(Long id){
+    public ActivityResponseDTO getActivity(Long id){
         Activity activity = activityRepository.findById(id)
             .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Activity not found"));
         return toResponse(activity);

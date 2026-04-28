@@ -24,4 +24,6 @@ public class Voter {
 
     private boolean staff;
 
+    public Voter() {
+    }
 }

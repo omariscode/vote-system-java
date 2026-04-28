@@ -30,5 +30,7 @@ public class Project {
 
     @ManyToOne
     private Subcategory subcategory;
-    
+
+    public Project() {
+    }
 }

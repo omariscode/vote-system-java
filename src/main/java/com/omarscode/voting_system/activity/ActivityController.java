@@ -28,12 +28,12 @@ public class ActivityController {
 
     @GetMapping
     public List<ActivityResponseDTO> getActivities() {
-        return activityService.getActivitiesDTO();
+        return activityService.getActivities();
     }
 
     @GetMapping("{id}")
     public ActivityResponseDTO getActivity(@PathVariable Long id){
-        return activityService.getActivityDTO(id);
+        return activityService.getActivity(id);
     }
 
     @DeleteMapping("{id}")

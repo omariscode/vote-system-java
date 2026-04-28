@@ -31,5 +31,7 @@ public class Member {
 
     @Enumerated(EnumType.STRING)
     private Course course;
-    
+
+    public Member() {
+    }
 }
